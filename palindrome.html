@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        let a = 121;
+        let b = a;
+        let i = 0;
+        let rev = 0;
+        while (a > 0) {
+            i = a % 10;
+            rev = (rev * 10) + i;
+            a = Math.floor(a / 10);
+        }
+        document.write((rev == b ? true : false) + "</br>");
+        document.write(rev);
+    </script>
+</body>
+
+</html>
